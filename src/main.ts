@@ -57,7 +57,7 @@ async function createToken(request: TokenRequest) {
 
 const app = express();
 app.use(bodyParser.json());
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 app.post('/createToken', async (req, res) => {
   const body = req.body ?? {};
