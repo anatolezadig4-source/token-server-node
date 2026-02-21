@@ -5,8 +5,9 @@
   "type": "module",
   "module": "dist/main.js",
   "scripts": {
-    "start": "node dist/main.js",
     "build": "tsc",
+    "start": "node dist/main.js",
+    "postinstall": "tsc",
     "lint": "eslint -f unix \"**/*.ts\"",
     "format": "prettier --write \"**/*.ts\""
   },
